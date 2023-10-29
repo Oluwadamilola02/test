@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Blogging App</title>
+  </head>
+  <body>
+    <div id="registration-form"></div>
+
+    <div id="login-form"></div>
+
+    <div id="blog-form">
+      <h2>Create a Blog</h2>
+      <form id="create-blog-form">
+        <input type="text" id="blog-title" placeholder="Title" required />
+        <input
+          type="text"
+          id="blog-description"
+          placeholder="Description"
+          required
+        />
+        <textarea id="blog-body" placeholder="Blog Content" required></textarea>
+        <button type="submit">Create Blog</button>
+      </form>
+    </div>
+
+    <div id="blog-list">
+      <h2>Published Blogs</h2>
+      <ul id="published-blogs"></ul>
+    </div>
+
+    <div id="blog-details">
+      <h2>Blog Details</h2>
+      <div id="blog-title-details"></div>
+      <div id="blog-description-details"></div>
+      <div id="blog-body-details"></div>
+    </div>
+  </body>
+</html>
